@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="100dp"
+            android:text="AboutUS" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/head"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/b1"
+            android:text="music" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/b2"
+            android:text="galary" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b3"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="30dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/t2"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/img_1" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/image1"
+                    android:background="@drawable/img_2" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/image2"
+                    android:background="@drawable/img_4" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="399dp"
+            android:layout_height="92dp"
+            app:srcCompat="@drawable/img" />
+    </RelativeLayout>
+</RelativeLayout>

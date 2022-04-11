@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/card1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/img" />
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="188dp"
+                android:layout_marginLeft="100dp"
+
+                android:layout_height="194dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/img_3" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="178dp"
+                android:layout_height="64dp"
+                android:layout_below="@id/image1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="center"
+                android:text="Mr.Karan Bedi"
+                android:textColor="#000000"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="136dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:text="(CEO)"
+                android:textColor="#000000"
+                android:textSize="28dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="401dp"
+        android:layout_height="252dp"
+
+        android:layout_marginTop="450dp"
+        android:gravity="center"
+        android:text="A successful and passionate businessman, Karan Bedi has made a strong presence in the Indian entertainment industry through his diverse experience in the digital world. Karan Bedi is a graduate of Stanford University in Economics. He is known for his success in transforming a utility video app into India’s second-largest OTT in a record eight months of its launch. "
+        android:textColor="#000000"
+        android:textSize="20dp" />
+</RelativeLayout>
